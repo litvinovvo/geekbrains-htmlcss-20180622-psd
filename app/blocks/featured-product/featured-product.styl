@@ -1,0 +1,96 @@
+.featured-product
+	// padding-left 98px
+	padding-top 100px
+	padding-bottom 120px
+	// padding-right 98px
+	&__tab-control
+		font-size 0
+		float left
+	&__btn-ghost
+		// float right
+		padding 15px 0 15px 10px
+	&__header
+		display flex
+		justify-content space-between
+		align-items flex-end
+	
+	&__tabs
+		margin-top 50px
+.tab
+	display flex
+	justify-content space-between
+	align-items flex-end
+.tab-item
+	position relative
+	font-size 0
+	text-align center
+	&__img-container
+		position relative
+		text-align center
+		display inline-block
+	&__hover
+		width 100%
+		height 100%
+		position absolute
+		top 0
+		left 0
+		display none
+		text-align center
+	&__btn
+		margin-top 64px
+	&__title
+		margin-top 16px
+		font-weight bold
+		font-size 22px
+		letter-spacing -0.5px       
+	&__details
+		color text-gray 
+		font-weight 300
+		font-size 14px
+		line-height 1.6
+		letter-spacing -0.1px
+		margin-top 15px  
+	&__back
+		width 100%
+		height 100%            
+		border-width 1px
+		border-color  #9c9c9c
+		border-style solid
+		background-color  #ffffff
+		opacity 0.9
+
+
+.tab-item:hover
+	.tab-item__hover
+		display block
+
+
+.tab-control
+	&__item
+		font-size 36px
+		display inline-block
+		padding 16px 22px 16px 8px
+		border-bottom 1px solid text-black
+		letter-spacing -1px
+		font-weight bold   
+		
+		^[0]__link
+			color text-gray 
+	&__item--active
+		border-bottom 3px solid text-black 
+		padding 16px 19px 14px 6px
+
+		& ^[0]__link
+			color text-black
+	&__link
+		transition all .2s 
+		text-decoration none
+	
+	&__item:hover
+		border-color text-gray
+		& ^[0]__link
+			color lighten(text-black, 50%)
+		
+	&__item:active
+		& ^[0]__link
+			color lighten(text-black, 10%)		

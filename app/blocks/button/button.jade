@@ -1,0 +1,8 @@
+include ../icon/icon 
+mixin btn(icon,size)
+    //- button.btn(type="button")&attributes(attributes)
+    //-     block
+    //-     +icon(icon,'isBlock','svg-icon-search')(width=size,height=size,class="btn__icon")
+    a.btn(role="button")&attributes(attributes)
+        block
+        +icon(icon,'isBlock','svg-icon-search')(width=size,height=size,class="btn__icon")

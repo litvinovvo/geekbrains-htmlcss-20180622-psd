@@ -1,0 +1,53 @@
+.mobile-app
+	// display block
+	position relative
+	// display flex
+	clearfix()
+		
+	&__img
+		display none
+	&__img-container
+		width 100%
+		max-height 516px
+		height 100vh
+		background-size cover
+		background-position 50% 50%			
+	&__link
+		font-size 0
+		margin-right 10px
+	&__link-img:hover
+		transform scale(1.08)
+	&__link-img
+		transition all .3s
+
+	&__text
+		// padding-left 98px
+		position absolute
+		align-self center
+
+	&__tag
+		color text-gray
+		font-weight 700
+		font-size 18px
+		text-transform uppercase
+		letter-spacing 1.5px
+		margin-bottom 4px
+		margin-top 4px
+	&__title
+		font-size 30px
+		letter-spacing -3px
+		font-weight 100
+		color text-black
+		text-transform uppercase
+		margin-bottom 5px
+		line-height 1.2
+		@media (min-width xl-bp)			
+			font-size 60px			
+
+	&__details
+		color text-gray 
+		font-weight 300
+		font-size 22px
+		line-height 1.8
+		letter-spacing -0.3px
+		margin-bottom 26px

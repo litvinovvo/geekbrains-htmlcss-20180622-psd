@@ -1,0 +1,30 @@
+include ../button/button
+mixin trending-products()
+    .container
+        .section-container
+            .trending-products&attributes(attributes)
+                .trending-products__header
+                    .trending-products__title Trending Products
+                    .trending-products__btn-ghost
+                        +btn('chevron-right',23)(class="btn--link") explore all
+                .trending-products__container.row
+                    .trending-products__item.col-sm-4.col-6
+                        a.trending-products__link(href="#")
+                            img.trending-products__img.img-fluid(src="img/product-11.jpg")
+                    .trending-products__item.col-sm-4.col-6
+                        a.trending-products__link(href="#")
+                            img.trending-products__img.img-fluid(src="img/product-21.jpg") 
+                    .trending-products__item.col-sm-4.col-6
+                        a.trending-products__link(href="#")                
+                            img.trending-products__img.img-fluid(src="img/product-31.jpg")
+                    .trending-products__item.col-sm-4.col-6
+                        a.trending-products__link(href="#")
+                            img.trending-products__img.img-fluid(src="img/product-41.jpg")
+                    .trending-products__item.col-sm-4.col-6
+                        a.trending-products__link(href="#")
+                            img.trending-products__img.img-fluid(src="img/product-5.jpg") 
+                    .trending-products__item.col-sm-4.col-6
+                        a.trending-products__link(href="#")
+                            img.trending-products__img.img-fluid(src="img/product-6.jpg")                                                                                                                                 
+
+

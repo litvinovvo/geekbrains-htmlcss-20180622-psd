@@ -1,0 +1,24 @@
+extends /blocks/layout-default/layout-default
+include ../blocks/header/header
+include ../blocks/slider/slider
+include ../blocks/featured-product/featured-product
+include ../blocks/promo-product/promo-product
+include ../blocks/trending-products/trending-products
+include ../blocks/hot-deal/hot-deal
+include ../blocks/exclusive-product/exclusive-product
+include ../blocks/mobile-app/mobile-app
+include ../blocks/footer/footer
+include ../blocks/icon/icon
+include ../blocks/hero/hero
+include ../blocks/products/products
+
+block head
+    - var pageTitle = 'interior';
+    - var dir = '';
+    - var lvl = 1
+block content
+    +header('products',lvl)
+    +hero()
+    +products()
+    +promo-product()
+    +footer()					

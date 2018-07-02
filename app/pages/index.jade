@@ -1,6 +1,26 @@
 extends /blocks/layout-default/layout-default
+include ../blocks/header/header
+include ../blocks/slider/slider
+include ../blocks/featured-product/featured-product
+include ../blocks/promo-product/promo-product
+include ../blocks/trending-products/trending-products
+include ../blocks/hot-deal/hot-deal
+include ../blocks/exclusive-product/exclusive-product
+include ../blocks/mobile-app/mobile-app
+include ../blocks/footer/footer
+include ../blocks/icon/icon
 
 block head
-	- var pageTitle = 'CSSSR Project Template';
-
+	- var pageTitle = 'interior';
+	- var dir = '';
+	- var lvl = 1
 block content
+	+header('home',lvl)
+	+slider()		
+	+featured-product()
+	+promo-product()
+	+trending-products()
+	+hot-deal()
+	+exclusive-product()
+	+mobile-app()
+	+footer()					

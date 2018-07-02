@@ -1,0 +1,19 @@
+include ../button/button
+mixin mobile-app()
+    .container
+        +b.mobile-app&attributes(attributes)
+            .row
+                .mobile-app__img-container(style="background-image: url(img/mobile-app.jpg);")
+                    img.mobile-app__img.img-fluid(src="img/mobile-app.jpg")
+                .mobile-app__text
+                    .section-container
+                        .col-12
+                            .mobile-app__tag mobile app
+                            .mobile-app__title Find. Follow. <br> Favorite.
+                            .mobile-app__details Save your favorites and share your style.
+                            a.mobile-app__link(href="#")
+                                img.mobile-app__link-img(src="img/app-store.png")
+                            a.mobile-app__link(href="#")    
+                                img.mobile-app__link-img(src="img/google-play.png")
+                                
+                            //- +btn('chevron-right',23) Order Us

@@ -1,0 +1,31 @@
+include ../icon/icon 
+
+mixin header(active,lvl)
+    .header
+        .container
+            .section-container
+                .row
+                    .header__logo.logo.col-lg-5
+                        if lvl == 2
+                            a.logo__link(href="../index.html")
+                                img.logo__img.img-fluid(src="../img/logo.png")
+                        else
+                            a.logo__link(href="index.html")
+                                img.logo__img.img-fluid(src="img/logo.png")
+
+                    .header__menu.menu.col-lg-7
+                        ul.menu__list
+                            each item in [{name: 'home',url: 'index.html', lvl: 1},{name: 'products',url: 'catalog.html',lvl: 1},{name: 'history',url: 'catalog/product.html',lvl: 2},{name: 'showroom',url: 'catalog/product.html',lvl: 2},{name: 'contact',url: 'catalog/product.html',lvl: 2}]
+                                if active == item.name
+                                    li.menu__item.menu__item--active
+                                        a.menu__link(href="#", class="menu__link--active")= item.name
+                                else
+                                    if lvl <= item.lvl
+                                        li.menu__item
+                                            a.menu__link(href=item.url, title=item.name)= item.name
+                                    if lvl > item.lvl			
+                                        li.menu__item
+                                            a.menu__link(href='../' + item.url,title=item.name)= item.name
+                            li.menu__search
+                                a.menu__svg-icon-search(href='#')
+                                    +icon('search','','svg-icon-search')(width="23",height="23",class="svg--overflow")           

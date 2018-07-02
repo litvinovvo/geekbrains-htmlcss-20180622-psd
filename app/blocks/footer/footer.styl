@@ -1,0 +1,133 @@
+.footer
+	text-align center
+	@media (min-width lg-bp)
+		text-align left
+	&__background
+		padding 118px 0 35px 0
+		background-color footer
+	&__row
+		display flex
+		justify-content space-between
+	&__col:first-child
+		margin 0 0
+	&__col:last-child
+		margin 0 0
+	&__col
+		margin 0 30px
+	&__col-3
+		width 24%
+		// margin-right 30px
+	&__col-4
+		width 33%
+
+	&__col-5
+		width 42%
+		// margin-right 30px
+	&__common
+		margin-top 40px
+		align-items baseline
+	&__copy
+		font-size 12px
+		font-weight 700
+		text-transform uppercase
+		letter-spacing 0.35px 
+		color text-black 
+	&__terms-block
+		text-align center
+		@media (min-width lg-bp)
+			text-align right
+	&__terms
+		font-size 12px
+		font-weight 700
+		text-transform: uppercase
+		color text-gray
+		text-decoration none
+		letter-spacing 0.4px
+		transition all .2s
+	&__terms:hover
+		text-decoration underline
+		color text-black
+	&__terms:active
+		color text-gray
+	&__title
+		letter-spacing 1.4px
+		font-size 18px
+		font-weight 700
+		color text-gray
+		text-transform uppercase    
+		margin-bottom 18px
+		margin-top 20px
+		@media (min-width lg-bp)
+			margin-top 0
+	&__p
+		font-weight 300
+		font-size 14px
+		line-height 1.5
+		letter-spacing -0.2px
+		margin-bottom 24px
+		color text-black
+	&__list
+		list-style-type none
+	&__list-el
+		font-weight bold
+		text-transform uppercase
+		font-size 14px
+		margin-bottom 13px
+		letter-spacing 0.5px
+	&__list-link
+		color text-black
+		text-decoration none
+	&__list-link
+		transition all .2s
+	&__list-link:hover
+		text-decoration underline
+	&__list-link:active
+		color text-gray
+	&__input
+		width 100%
+		padding 12px
+		padding-right 36px
+		background-color #fff
+		border-width 1px
+		border-color  #d9dee1
+		border-style solid		
+	&__input:focus + &__send .svg-icon-plane
+		transform-origin center
+		transform scale(1.08)
+	&__input:focus
+		outline 1px solid tag-blue        
+	&__send
+		position absolute
+		right 12px
+		top 12px
+	&__send .svg-icon-plane
+		transition all .2s
+	&__send:hover .svg-icon-plane
+		fill tag-blue
+	&__send:active .svg-icon-plane
+		fill tag-gray		
+	&__subscribe
+		position relative
+	&__social
+		text-align center
+		margin 15px 0
+		@media (min-width lg-bp)
+			margin 0
+	&__social-icon
+		margin 0 2px
+		font-size 0
+		width 26px
+		height 26px
+		display inline-block
+		border-radius 50%
+		background-color text-gray
+		padding 6px
+		text-align center
+		transition all .2s
+	&__social-icon:hover
+		background-color text-black
+	&__social-icon:active
+		background-color lighten(text-gray,50%)
+	&__no-left-padding
+		@media (min-width xl-bp)
+			margin-left -1*gutter     

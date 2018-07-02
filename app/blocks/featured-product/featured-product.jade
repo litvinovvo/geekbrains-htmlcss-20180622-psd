@@ -1,0 +1,52 @@
+include ../button/button
+mixin featured-product()
+    .container
+        .featured-product.section-container&attributes(attributes)
+            .featured-product__header
+                ul.featured-product__tab-control.tab-control
+                    li.tab-control__item.tab-control__item--active
+                        a.tab-control__link(href="#") Featured
+                    li.tab-control__item
+                        a.tab-control__link(href="#") New
+                .featured-product__btn-ghost
+                    +btn('cheveron-right',21)(class="btn--link") explore all
+            .featured-product__tabs
+                .featured-product__tab.tab.row                
+                    .tab-item.col-md-6.col-xl-3
+                        .tab-item__img-container
+                            img.tab-item__img.img-fluid(src="img/product-1.jpg")
+                            .tab-item__hover
+                                .tab-item__back
+                                    .tab-item__btn
+                                        +btn('cheveron-right',35)(class="btn--icon")
+                                    .tab-item__title Fishnet Chair
+                                    .tab-item__details Seat and back with upholstery<br>made of cold cure foam
+                    .tab-item.col-md-6.col-xl-3
+                        .tab-item__img-container
+                            img.tab-item__img.img-fluid(src="img/product-2.jpg")
+                            .tab-item__hover
+                                .tab-item__back
+                                    .tab-item__btn
+                                        +btn('cheveron-right',35)(class="btn--icon")
+                                    .tab-item__title Fishnet Chair
+                                    .tab-item__details Seat and back with upholstery<br>made of cold cure foam                  
+                    .tab-item.col-md-6.col-xl-3
+                        .tab-item__img-container
+                            img.tab-item__img.img-fluid(src="img/product-3.jpg")
+                            .tab-item__hover
+                                .tab-item__back
+                                    .tab-item__btn
+                                        +btn('cheveron-right',35)(class="btn--icon")
+                                    .tab-item__title Fishnet Chair
+                                    .tab-item__details Seat and back with upholstery<br>made of cold cure foam                   
+                    .tab-item.col-md-6.col-xl-3
+                        .tab-item__img-container
+                            img.tab-item__img.img-fluid(src="img/product-4.jpg")
+                            .tab-item__hover
+                                .tab-item__back
+                                    .tab-item__btn
+                                        +btn('cheveron-right',35)(class="btn--icon")
+                                    .tab-item__title Fishnet Chair
+                                    .tab-item__details Seat and back with upholstery<br>made of cold cure foam                                                                        
+
+

@@ -1,0 +1,76 @@
+.slider
+	display block
+	position relative
+	// z-index -1
+	clearfix()
+	// &__slide
+	&__nav
+		position absolute
+		bottom 20px
+		left 50%
+		width 50%
+		margin-left -25%
+		text-align center
+	&__nav-item
+		background-color slider-nav-gray
+		width 30px
+		height 30px
+		border-radius 50%
+		display inline-block
+		vertical-align middle
+		margin 0 3px
+		transition all .3s
+	&__nav-item--active
+		background-color text-black
+		width 40px
+		height 40px
+	&__nav-link
+		width 100%
+		height 100%
+		display block
+	&__nav-item:hover
+		background-color tag-green
+	&__nav-item:active
+		background-color text-gray
+	.slide
+		display flex
+		&__img
+			display none
+		&__text
+			position absolute
+			align-self center
+			@media (min-width xl-bp)			
+				top 371px
+		&__tag
+			color tag-green
+			font-weight 700
+			font-size 18px
+			text-transform uppercase
+			letter-spacing 1.5px
+			margin-bottom 10px
+		&__title
+			font-size 30px
+			letter-spacing -2px
+			font-weight 100
+			color text-black
+			text-transform uppercase
+			margin-bottom 20px
+			@media (min-width xl-bp)			
+				font-size 60px			
+		&__details
+			color text-gray 
+			font-weight 300
+			font-size 14px
+			line-height 1.8
+			letter-spacing -0.1px
+			margin-bottom 26px
+		&__img-container
+			width 100%
+			max-height 800px
+			height 100vh
+			background-size cover
+			background-position 50% 50%	
+
+
+
+

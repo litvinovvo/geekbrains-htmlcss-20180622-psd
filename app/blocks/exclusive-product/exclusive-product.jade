@@ -1,0 +1,33 @@
+include ../button/button
+mixin exclusive-product()
+	.container
+		.section-container
+			.exclusive-product.row.justify-content-center&attributes(attributes)
+				.col-sm-auto.col-xl-6.col-lg-6
+					.exclusive-product__item
+						.exclusive-product__img-container
+							img.exclusive-product__img.img-fluid(src="img/product-1-lg.jpg", alt="")
+						.exclusive-product__text
+							.exclusive-product__tag exclusive
+							.exclusive-product__title Fishnet Chair
+							.exclusive-product__details Seat and back with upholstery made of cold cure <br> foam.Steel frame, available in matt
+							.exclusive-product__btn
+								+btn('chevron-right',23) Order Us
+				.col-lg-6.col-xl-6
+					.row.justify-content-center
+						.exclusive-product__item.exclusive-product__item--hover.col-6.col-lg-6.col-md-auto
+							a.exclusive-product__link(href="#")
+								img.exclusive-product__img.img-fluid(src="img/product-2-sm.jpg", alt="")
+						.exclusive-product__item.exclusive-product__item--hover.col-6.col-lg-6.col-md-auto
+							a.exclusive-product__link(href="#")                
+								img.exclusive-product__img.img-fluid(src="img/product-3-sm.jpg", alt="")
+						.exclusive-product__item.exclusive-product__item--hover.col-6.col-lg-6.col-md-auto
+							a.exclusive-product__link(href="#")
+								img.exclusive-product__img.img-fluid(src="img/product-4-sm.jpg", alt="")
+						.exclusive-product__item.exclusive-product__item--hover.col-6.col-lg-6.col-md-auto
+							a.exclusive-product__link(href="#")                
+								img.exclusive-product__img.img-fluid(src="img/product-5-sm.jpg", alt="")                                                            
+
+
+
+

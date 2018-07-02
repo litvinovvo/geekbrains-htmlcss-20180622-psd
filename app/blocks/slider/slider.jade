@@ -1,0 +1,24 @@
+include ../button/button
+mixin slider()
+	.container
+		+b.slider&attributes(attributes)
+			.slider__slides
+				.slider__slide.slide.row
+					.slide__img-container(style="background-image: url(img/slider-img1.jpg);")
+						img.slide__img.img-fluid(src="img/slider-img1.jpg")
+					.slide__text.col-md-12
+						.section-container
+							.slide__tag Trending
+							.slide__title Fishnet Chair
+							.slide__details Seat and back with upholstery made of cold cure foam. Steel frame,<br>available in matt powder-coated black
+							+btn('cheveron-right',21)(href="#") Order Us
+			ul.slider__nav
+				li.slider__nav-item
+					a.slider__nav-link(href="#")
+				li.slider__nav-item.slider__nav-item--active
+					a.slider__nav-link(href="#")				
+				li.slider__nav-item
+					a.slider__nav-link(href="#")									
+						
+		
+

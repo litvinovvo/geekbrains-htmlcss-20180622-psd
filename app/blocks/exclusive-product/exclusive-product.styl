@@ -1,0 +1,52 @@
+.exclusive-product
+	margin-top 120px
+	margin-bottom 90px
+	display flex
+	&__item
+		display flex
+		margin-bottom 30px
+		position relative
+	&__link
+		overflow hidden
+	&__img
+		width 100%
+		display block
+		transition all .3s
+	&__item--hover &__img:hover
+		transform scale(1.1)
+	&__container
+		display flex
+		flex-wrap wrap
+		justify-content space-between
+		align-content space-between
+		width 50%
+	&__text
+		align-self center
+		position absolute
+		padding 15px
+		// top 0
+		@media (min-width sm-bp)
+			padding 0px 30px
+	&__tag
+		color tag-blue
+		font-weight 700
+		font-size 18px
+		text-transform uppercase
+		letter-spacing 1.5px
+		margin-top 0
+		margin-bottom 13px
+	&__title
+		font-size 36px
+		letter-spacing -1px
+		font-weight bold    
+		color text-black  
+		margin-bottom 13px
+	&__details
+		color text-gray 
+		font-weight 300
+		font-size 14px
+		line-height 1.8
+		letter-spacing -0.1px
+		margin-bottom 26px
+	&__btn
+		margin-bottom 2px

@@ -1,0 +1,107 @@
+.products
+	// padding-left 98px
+	padding-top 55px
+	padding-bottom 120px
+	// padding-right 98px
+	&__nav
+		font-size 0
+		float left
+
+	&__header
+		display flex
+		justify-content space-between
+		align-items flex-end
+	&__more
+		text-align center
+		padding-top 30px
+		padding-bottom 5px
+	&__svg-icon-more:hover .svg-icon-more
+			transform scale(1.2)
+	&__svg-icon-more:active .svg-icon-more
+			transform scale(1.2) rotate(180deg)
+	&__items
+		margin-top 50px
+		display flex
+		justify-content space-between
+		align-items flex-end
+.products-item
+	position relative
+	font-size 0
+	text-align center
+	margin-bottom 30px
+	&__img-container
+		position relative
+		text-align center
+		display inline-block
+	&__hover
+		width 100%
+		height 100%
+		position absolute
+		top 0
+		left 0
+		display none
+		text-align center
+	&__btn
+		margin-top 64px
+	&__title
+		margin-top 16px
+		font-weight bold
+		font-size 22px
+		letter-spacing -0.5px       
+	&__details
+		color text-gray 
+		font-weight 300
+		font-size 14px
+		line-height 1.6
+		letter-spacing -0.1px
+		margin-top 15px  
+	&__back
+		width 100%
+		height 100%            
+		border-width 1px
+		border-color  #9c9c9c
+		border-style solid
+		background-color  #ffffff
+		opacity 0.9
+
+
+	&:hover
+		.products-item__hover
+			display block
+
+
+.products-nav
+	&__item
+		font-size 18px
+		display inline-block
+		padding 14px 16px 18px 16px
+		border-bottom 1px solid text-gray
+		letter-spacing 1px
+		font-weight bold
+		text-transform uppercase   
+		
+		^[0]__link
+			color text-gray 
+	&__item--active
+		border-bottom 3px solid text-black 
+		padding 8px 28px 16px 7px
+
+		& ^[0]__link
+			color text-black
+	&__link
+		transition all .2s 
+		text-decoration none
+	
+	&__item:hover
+		border-color text-gray
+		& ^[0]__link
+			color lighten(text-black, 50%)
+		
+	&__item:active
+		& ^[0]__link
+			color lighten(text-black, 10%)		
+
+.svg-icon-more
+	transform-origin center
+	transition transform .3s
+	fill text-black

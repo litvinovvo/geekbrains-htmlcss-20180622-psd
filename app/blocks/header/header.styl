@@ -1,0 +1,87 @@
+.header
+	display block
+	// position fixed
+	// width 100%
+	// top 0
+
+	position absolute
+	width 100%
+	z-index 1
+
+	@media (max-width lg-bp)
+		position relative
+
+	&__logo
+		margin-top 63px
+		@media (max-width lg-bp)
+			text-align center
+		// padding-left section-padding
+		// float left
+	&__menu
+		// float right
+		margin-top 48px
+		text-align center
+		padding-left 0
+
+		// margin-right 168px
+	clearfix()	
+		
+.menu
+	&__search
+		display inline-block
+		vertical-align top
+		margin-top 15px
+		margin-left 2px
+	&__list
+		display inline-block
+		list-style-type none
+	&__item
+		display inline-block
+		padding-bottom 8px
+		padding-right 11px
+		padding-left 10px
+		padding-top 16px
+	
+	&__item--active
+		border-bottom 3px solid active-link	
+	&__link
+		color gray-link
+		font-size 14px
+		font-weight 300
+		text-transform uppercase
+		text-decoration none
+		letter-spacing 1px
+
+	&__link--active
+		color active-link
+		font-weight 700
+	&__link:hover
+		color active-link
+		font-weight 700
+	&__link:active
+		color text-gray	
+	&__link:after
+		display block
+		content attr(title)
+		font-weight 700
+		height 0
+		overflow hidden
+		visibility hidden
+	&__svg-icon-search .svg-icon-search
+		transition: all .1s ease-in-out;
+	&__svg-icon-search:active
+		use.svg-icon-search
+			fill gray-link
+	&__svg-icon-search:hover
+		use.svg-icon-search
+			transform-origin center
+			transform scale(1.1) 
+	
+use.svg-icon-search
+	fill svg-icon-black
+		
+
+
+
+
+
